@@ -1104,11 +1104,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sergi\\RiderProjects\\ApiGame\\ApiGame\\ApiGame.csproj",
+      "projectUniqueName": "C:\\2ºDAM\\PSP\\ProyectoFinal\\ApiGame\\ApiGame.csproj",
       "projectName": "ApiGame",
-      "projectPath": "C:\\Users\\sergi\\RiderProjects\\ApiGame\\ApiGame\\ApiGame.csproj",
+      "projectPath": "C:\\2ºDAM\\PSP\\ProyectoFinal\\ApiGame\\ApiGame.csproj",
       "packagesPath": "C:\\Users\\sergi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sergi\\RiderProjects\\ApiGame\\ApiGame\\obj\\",
+      "outputPath": "C:\\2ºDAM\\PSP\\ProyectoFinal\\ApiGame\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sergi\\AppData\\Roaming\\NuGet\\NuGet.Config"
