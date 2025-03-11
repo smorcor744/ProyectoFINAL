@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xIaG4aqdJUE=",
+  "dgSpecHash": "RfvFSNqilpk=",
   "success": true,
-  "projectFilePath": "C:\\2ºDAM\\PSP\\ApiGame\\ApiGame\\ApiGame.csproj",
+  "projectFilePath": "C:\\Users\\sergi\\RiderProjects\\ApiGame\\ApiGame\\ApiGame.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sergi\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.10\\microsoft.aspnetcore.openapi.8.0.10.nupkg.sha512",
     "C:\\Users\\sergi\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.2\\microsoft.entityframeworkcore.9.0.2.nupkg.sha512",
