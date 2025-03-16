@@ -17,9 +17,12 @@ namespace ApiGame.Controllers
 
         // GET: api/Players
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Player>>> GetPlayers()
+        public async Task<ActionResult<IEnumerable<Player>>> GetPlayers(int page = 1, int pageSize = 10)
         {
-            return await _context.Players.ToListAsync();
+            return await _context.Players
+                                .Skip((page - 1) * pageSize)
+                                .Take(pageSize)
+                                .ToListAsync();
         }
 
         // GET: api/Players/5
@@ -37,7 +40,6 @@ namespace ApiGame.Controllers
         }
 
         // PUT: api/Players/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPlayer(long id, Player player)
         {
@@ -68,10 +70,14 @@ namespace ApiGame.Controllers
         }
 
         // POST: api/Players
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Player>> PostPlayer(Player player)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             _context.Players.Add(player);
             await _context.SaveChangesAsync();
 
